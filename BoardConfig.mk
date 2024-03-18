@@ -20,5 +20,8 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Board Info
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
 # Inherit from the proprietary version
 include vendor/xiaomi/pipa/BoardConfigVendor.mk
