@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_pipa.mk
+    $(LOCAL_DIR)/superior_pipa.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_pipa-user \
-    lineage_pipa-userdebug \
-    lineage_pipa-eng
+    superior_pipa-user \
+    superior_pipa-userdebug \
+    superior_pipa-eng
