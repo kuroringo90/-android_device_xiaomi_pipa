@@ -18,7 +18,7 @@ $(call inherit-product, device/xiaomi/pipa/device.mk)
 RISING_MAINTAINER := ste0090
 RISING_CHIPSET := SDM870
 
-WITH_GMS := false
+WITH_GMS := true
 TARGET_USE_GOOGLE_TELEPHONY := false
 TARGET_ENABLE_BLUR := true
 TARGET_PREBUILT_PIXEL_LAUNCHER := false
