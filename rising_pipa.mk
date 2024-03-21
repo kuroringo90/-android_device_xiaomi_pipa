@@ -8,13 +8,27 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit some common lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+# Inherit some common Rising stuff.
+$(call inherit-product, vendor/rising/config/rising.mk)
 
 # Inherit from pipa device
 $(call inherit-product, device/xiaomi/pipa/device.mk)
 
-PRODUCT_NAME := lineage_pipa
+# Device Identifiers
+RISING_MAINTAINER := ste0090
+RISING_CHIPSET := SDM870
+
+WITH_GMS := false
+TARGET_USE_GOOGLE_TELEPHONY := false
+TARGET_ENABLE_BLUR := true
+TARGET_PREBUILT_PIXEL_LAUNCHER := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+USER_BUILD_NO_CHANGELOG := 1
+TARGET_DISABLE_EPPE := true
+INLINE_KERNEL_BUILDING := true
+TARGET_DEVICE_IS_TABLET := true
+
+PRODUCT_NAME := rising_pipa
 PRODUCT_DEVICE := pipa
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
