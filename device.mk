@@ -61,9 +61,13 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     PipaFlipFlap \
-    FlipFlap \
+    FlipFlap
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
+
+# Camera
+PRODUCT_PACKAGES += \
+    Aperture \
 
 # Rootdir
 PRODUCT_PACKAGES += \
