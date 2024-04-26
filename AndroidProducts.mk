@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rising_pipa.mk
+    $(LOCAL_DIR)/lineage_pipa.mk
 
 COMMON_LUNCH_CHOICES := \
-    rising_pipa-user \
-    rising_pipa-userdebug \
-    rising_pipa-eng
+    lineage_pipa-user \
+    lineage_pipa-userdebug \
+    lineage_pipa-eng
